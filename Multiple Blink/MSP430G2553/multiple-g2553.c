@@ -11,10 +11,9 @@ void main(void)
 	P1DIR |= (BIT0 + BIT6);			// configure P1.0 and P1.6 as output
 	P1OUT &= ~(BIT0 + BIT6);		// reset the LEDs (so they are off in the start)
 
-	while (1)
+	while (1)						//while->always
 	{
 		P1OUT ^= (BIT0 + BIT6);		// toggle (XOR) P1.0 and P1.6 LEDs
 		__delay_cycles(250000);     // a ~250000uS delay
 	}
 }
-© 2017 GitHub, Inc.
