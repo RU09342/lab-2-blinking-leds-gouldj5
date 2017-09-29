@@ -8,6 +8,7 @@ msp430FR5994
 */
 #define BUTTON BIT3		//define easily identifiable characters as BITs
 #define LED1 BIT0
+#define LED2 BIT6
 
 unsigned int enabled = 0; // declare int to keep track of when the button was pressed
 						  // By default P1.0 will flash.
@@ -16,16 +17,16 @@ void main(void)
 {
 	WDTCTL = WDTPW | WDTHOLD;       // stop watchdog timer
 	
-	P1OUT &= ~LED1;
-	P1DIR = LED1;
+	P1OUT &= ~LED1;			//Clear P1.0 output latch for a defined power-on state
+	P1DIR = LED1;			// Set P1.0 to output direction
 
-	P1DIR &= ~BUTTON;         
+	P1DIR &= ~BUTTON;		//sets button input direction   
 	P1REN ^= BUTTON;  //pull-resistor
 	P1OUT ^= BUTTON;  //sets pull-up resistor, writes "1" 
 
 	while (1)
 	{
-		if (!(P1IN & BUTTON)
+		if (!(P1IN & BUTTON))
 			P1OUT |= LED1;
 		else
 			P1OUT &= ~LED1; //LED off when button not pressed
