@@ -28,7 +28,9 @@ void main(void)
 	{
 		if (!(P1IN & BUTTON))
 			P1OUT |= LED1;
+			P1OUT &= ~LED2;
 		else
 			P1OUT &= ~LED1; //LED off when button not pressed
+			P1OUT |= LED2;
 	}
 }
