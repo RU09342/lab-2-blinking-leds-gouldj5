@@ -17,4 +17,3 @@ void main(void)
 		__delay_cycles(250000);     // a ~250000uS delay
 	}
 }
-© 2017 GitHub, Inc.
