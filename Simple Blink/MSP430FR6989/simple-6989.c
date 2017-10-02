@@ -1,5 +1,5 @@
 #include <msp430.h>
-/*MSP430FR5994*/
+/*MSP430FR6989*/
 /*
 Simple Blink
 50% duty cycle
