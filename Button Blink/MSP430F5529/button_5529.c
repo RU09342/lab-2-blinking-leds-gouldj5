@@ -13,8 +13,6 @@ void main(void)
 	P1DIR = LED1;			// configure LED P1.0 to output direction
 	P1OUT &= ~LED1;		// Set output latch for power-on state
 
-						//BIT0 is LED1 - RED
-
 	P2DIR &= ~BUTTON;
 	P2REN ^= BUTTON;
 	P2OUT ^= BUTTON;
