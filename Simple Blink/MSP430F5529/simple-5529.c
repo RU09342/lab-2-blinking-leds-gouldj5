@@ -1,5 +1,5 @@
 #include <msp430.h>
-/*MSP430G2553*/
+/*MSP430F5529*/
 /*
 Simple Blink
 50% duty cycle
@@ -11,6 +11,7 @@ void main(void)
 	P1DIR |= BIT0;			// configure P1.0 and P1.6 as output
 	P1OUT &= ~BIT0;		// reset the LEDs (so they are off in the start)
 
+	int count = 0;
 
 	while (1)
 	{
