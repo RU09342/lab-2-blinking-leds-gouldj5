@@ -11,7 +11,7 @@ msp430.h - default library
 * CCS coding software
 
 ## Set Requirements
-For starters, you will need to blink one of the on-board LED's at a particular rate. It is up to you to determine what rate you want to blink it at, however it has to be symmetrical (50% Duty Cycle), meaning equal times on and off. You should attempt multiple different speeds before moving on to the next part of the lab.
+"For starters, you will need to blink one of the on-board LED's at a particular rate. It is up to you to determine what rate you want to blink it at, however it has to be symmetrical (50% Duty Cycle), meaning equal times on and off. You should attempt multiple different speeds before moving on to the next part of the lab."
 
 ## Compatibility
 * MSP430F5529
@@ -19,6 +19,7 @@ For starters, you will need to blink one of the on-board LED's at a particular r
 * MSP430FR6989
 * MSP430FR5594
 * MSP430G2553
+
 The simple blink procedure for this lab required little to no change across processors and luckily was easily configured with each board's LED1 port. 
 
 # Functionality Description
@@ -61,14 +62,13 @@ void main(void)
 #### UART Control: Single Character
 
 #### SOS
-On the G2553, the blink was set up to morse code to transmit SOS. UART morse code transfer is being investigated for future lab.
+On the G2553, the blink was set up to morse code to transmit SOS. UART morse code transfer is being integrated
 * Uses a defined interval for blink
 * Delays are managed using interrupts (more interrupt description used in Lab3)
-*
 
-##Tasks
-[x] Blink one of the on-board LED's at a particular rate (50% duty cycle)
-[x] Extra Work
+## Tasks
+* [x] Blink one of the on-board LED's at a particular rate (50% duty cycle)
+* [x] Extra Work
 
 
 
