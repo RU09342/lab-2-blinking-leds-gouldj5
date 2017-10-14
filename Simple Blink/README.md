@@ -65,8 +65,9 @@ void main(void)
 
 #### SOS
 On the G2553, the blink was set up to morse code to transmit SOS. UART morse code transfer is being integrated
-* Uses a defined interval for blink
-* Delays are managed using interrupts (more interrupt description used in Lab3)
+* Uses a defined interval for blink and patterns
+* Delays are managed using interrupts (more interrupt description in lab 3)
+* Blinks in Morse code SOS (short-short-short, long-long-long, short-short-short)
 
 ##### Example Code
 ```C

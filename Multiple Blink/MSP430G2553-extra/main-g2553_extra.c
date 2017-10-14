@@ -1,13 +1,13 @@
 
 #include <msp430.h>
 //MSP430G2553
-//multiple blink extra work 
+//multiple blink + extra work 
 //button design with alternating, speed change, blinking
 
 int main(void) {
 
-	// Stops the watchdog timer
-	WDTCTL = WDTPW + WDTHOLD;
+	
+	WDTCTL = WDTPW + WDTHOLD;		// Stops the watchdog timer
 
 	P1DIR |= (BIT0 + BIT6);			// configure LED P1.0 and 1.6 to output direction
 	P1OUT &= ~(BIT0 + BIT6);
