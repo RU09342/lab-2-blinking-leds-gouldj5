@@ -2,7 +2,6 @@
 /*MSP430FR5994*/
 /*
 Multiple Blink
-50% duty cycle
 */
 
 void main(void)
@@ -32,15 +31,15 @@ void main(void)
 	while (1)						//while->always
 	{
 
-		if (count >= 15000) {
+		if (count >= 15000) {		//set limit
 			P1OUT ^= BIT0;
-			count = 0;
+			count = 0;				//initialize to zero
 		}
-		if (count1 >= 30000) {
-			P1OUT ^= BIT1;
+		if (count1 >= 30000) {		//set limit 
+			P1OUT ^= BIT1;			
 			count1 = 0;
 		}
-		count++;
+		count++;					//increment count
 		count1++;
 	}
 }

@@ -7,12 +7,12 @@ Multiple Blink
 
 int main(void)
 {
-	WDTCTL = WDTPW | WDTHOLD;		// stop watchdog timer
-	P1DIR |= BIT0;			// configure LED P1.0 and 2.0 to output direction
-	P1OUT &= ~BIT0;		// Set output latch for power-on state
-	P4DIR |= BIT7;			// configure LED P2.0 to output direction
+	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
+	P1DIR |= BIT0;				// configure LED P1.0 and 2.0 to output direction
+	P1OUT &= ~BIT0;				// Set output latch for power-on state
+	P4DIR |= BIT7;				// configure LED P2.0 to output direction
 	P4OUT &= ~BIT7;
-
+	
 	int count = 0;                  //loops 2 LEDs to blink continuously
 	int count1 = 0;
 
