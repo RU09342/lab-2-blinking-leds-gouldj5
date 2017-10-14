@@ -1,4 +1,4 @@
-# LAB 2 - Simple Blink
+# LAB 2 - Button Blink
 #### Joshua Gould
 ##### Created - 10-9-2017
 ##### Updated - 10-14-2017
