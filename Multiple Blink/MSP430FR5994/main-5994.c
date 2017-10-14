@@ -13,17 +13,7 @@ void main(void)
 									//BIT0 is LED1 - RED
 									//BIT1 is LED2 - GREEN
 
-	PM5CTL0 &= ~LOCKLPM5;           /*On FR5x family devices, and F5x devices,
-									after entering LPMx.5, the port control registers
-									and the port pin logic are sewered.
-									This prevents the CPU’s internal boot code to
-									reprogram the port pins after wakeup from low
-									power mode with disabled CPU core.
-									Your application can then configure the
-									port controls as they are expected to be,
-									and then re-establish the link between controls
-									and pin logic without any glitches on pins that
-									have been output pins during LPM.*/
+	PM5CTL0 &= ~LOCKLPM5;           //enable high impedence
 
 	int count = 0;                  //loops 2 LEDs to blink continuously
 	int count1 = 0;

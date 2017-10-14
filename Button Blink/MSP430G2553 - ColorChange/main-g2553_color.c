@@ -1,6 +1,7 @@
 #include <msp430.h>
 
 /**
+MSP430G2553
 button blink
 Switch between blinking two LEDs with 50% duty cycle when button is pressed.
 This is an extension of blink.c. This code will allow you switch between which LED is blinking by pressing a button.
@@ -21,14 +22,14 @@ void main(void)
 	P1DIR |= LED1;			// Set P1.0 to output direction
 	P1DIR |= LED2;			// Set P1.6 to output direction
 
-	P1REN = BUTTON;  //pull-resistor
-	P1OUT = BUTTON;  //sets pull-up resistor, writes "1" 
+	P1REN = BUTTON;						//pull-resistor
+	P1OUT = BUTTON;						//sets pull-up resistor, writes "1" 
 
 	while (1)
 	{
-		if (!(P1IN & BUTTON)) {
-			_delay_cycles(5000);	//Delay
-			LEDcl = !LEDcl;
+		if (!(P1IN & BUTTON)) {			//if Button not pressed
+			_delay_cycles(5000);		//Delay for blink cycle
+			LEDcl = !LEDcl;				//alternate 1 and 0 for switch statement control
 		}
 		switch (LEDcl)
 		{

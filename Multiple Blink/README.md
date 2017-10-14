@@ -68,6 +68,11 @@ int main(void) {
 #### Alternate Speed Control Blink
 Both alternating blinks go at different rates for blinking when a button is pressed
 
+* Turn on-board resistor and pull-down
+* volatile variable for loop functionality
+* Alternate with while loop and if statements
+* switch statement handles different speeds
+
 #### Example Code
 ```C
 #include <msp430.h>
