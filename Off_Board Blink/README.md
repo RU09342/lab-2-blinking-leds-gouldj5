@@ -32,7 +32,7 @@ Blink 2 LEDs off from the development board using the G2553 IC chip
 * Similar to simple-blink code from this lab 
 
 ### Picture
-(https://github.com/RU09342/lab-2-blinking-leds-gouldj5/blob/master/Off_Board%20Blink/MSP430G2553/simpleblink-g2553-offboard.jpg?raw=true "Off-Board Blink")
+( https://github.com/RU09342/lab-2-blinking-leds-gouldj5/blob/master/Off_Board%20Blink/MSP430G2553/simpleblink-g2553-offboard.jpg?raw=true "Off-Board Blink")
 
 ### Gif
-(https://github.com/RU09342/lab-2-blinking-leds-gouldj5/blob/master/Off_Board%20Blink/MSP430G2553/msp430G2553-offboard.gif?raw=true "Off-Board Gif")
+( https://github.com/RU09342/lab-2-blinking-leds-gouldj5/blob/master/Off_Board%20Blink/MSP430G2553/msp430G2553-offboard.gif?raw=true "Off-Board Gif")
