@@ -10,6 +10,7 @@
 * Proper Reset Circuitry 
 * Proper Bypass and Bulk Capacitors as needed
 * Breadboard
+* LED of any color
 * Wires
 
 ## Set Requirements
@@ -19,21 +20,18 @@ Please be advised that you can easily damage or destroy one of the pins on the M
 #### Tasks
 * [x] Use the G2553 with an off-board circuit
 * [x] Blink two LED's with the G2553
-* [] Extra Work
+* [ ] Extra Work
 
 ## Compatibility
 * MSP430G2553
 
 # Functionality Description
-Blink 2 LEDs off from the development board using
+Blink 2 LEDs off from the development board using the G2553 IC chip
 ### Detailed Description
 
-* 
+* Similar to simple-blink code from this lab 
 
-### Example Code
-```C
-
-```
 ### Picture
+(https://github.com/RU09342/lab-2-blinking-leds-gouldj5/blob/master/Off_Board%20Blink/MSP430G2553/simpleblink-g2553-offboard.jpg?raw=true "Off-Board Blink")
 
 ### Gif
